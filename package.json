@@ -1,0 +1,11 @@
+{
+  "name": "single-spa-system-js",
+  "scripts": {
+    "start" : "pnpm -stream -parallel -filter \"@org/*\" run start",
+    "postinstall": "pnpm -stream -filter \"@org/*\" install"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {}
+}

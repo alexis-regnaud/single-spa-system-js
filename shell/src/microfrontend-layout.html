@@ -1,0 +1,20 @@
+<single-spa-router mode="hash">
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <a href="#/">Go to React App</a><br/>
+  <a href="#/angular">Go to Angular App</a>
+
+  <main>
+    <route path="angular">
+      <application name="@org/angular-app"></application>
+    </route>
+    <route default>
+      <application name="@org/react-app"></application>
+    </route>
+  </main>
+</single-spa-router>
